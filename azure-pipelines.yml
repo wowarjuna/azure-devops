@@ -21,6 +21,6 @@ steps:
     packageType: 'sdk' 
     version: 5.0.x
     
-- script: dotnet build --configuration ${buildConfiguration}
+- script: dotnet build --configuration $(buildConfiguration)
   workingDirectory: devops-sample
   displayName: 'backend build'
