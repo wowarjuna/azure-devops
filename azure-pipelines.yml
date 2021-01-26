@@ -24,3 +24,7 @@ steps:
 - script: dotnet build --configuration $(buildConfiguration)
   workingDirectory: devops-sample
   displayName: 'backend build'
+
+- script: dotnet publish -c $(buildConfiguration) --self-contained true -r win-x86
+  workingDirectory: devops-sample
+  displayName: 'backend publish'
