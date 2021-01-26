@@ -31,9 +31,9 @@ steps:
 
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: 'backend/bin/Release/net5.0/win-x86/publish'
+    rootFolderOrFile: 'devops-sample/bin/Release/net5.0/win-x86/publish'
     includeRootFolder: false
     archiveType: zip
-    archiveFile: '$(Build.ArtifactStagingDirectory)/backend/$(Build.BuildId).zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/devops-sample/$(Build.BuildId).zip'
     replaceExistingArchive: true
   displayName: 'backend zip files'
